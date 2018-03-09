@@ -1,6 +1,8 @@
 install:
+  - "echo \"docker images|grep storj\""
   - docker-compose build
 script:
   - cp tests/options.docker_compose_example.yml tests/options.yml
   - "echo 'TODO: run user creation script'"
+  - "echo \"docker images|grep storj\""
   - docker-compose run python_libstorj python -m unittest discover
