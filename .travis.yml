@@ -1,5 +1,5 @@
 script:
   - cp tests/options.docker_compose_example.yml tests/options.yml
   - "echo 'TODO: run user creation script'"
-  - apt install -yqq tree && tree -L 3
+  - sudo apt install -yqq tree && tree -L 3
   - docker-compose run python_libstorj python -m unittest discover
