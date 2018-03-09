@@ -1,7 +1,6 @@
 install:
-  - echo "skipping install..." #docker-compose build
+  - docker-compose build
 script:
-  - echo "Testing 123"
   - cp tests/options.docker_compose_example.yml tests/options.yml
   - "echo 'TODO: run user creation script'"
   - docker-compose run python_libstorj python -m unittest discover
