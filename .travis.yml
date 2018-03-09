@@ -1,5 +1,5 @@
 install:
-  - docker-compose build
+  - echo "skipping install..." #docker-compose build
 script:
   - echo "Testing 123"
   - cp python_libstorj/tests/options.docker_compose_example.yml python_libstorj/tests/options.yml
