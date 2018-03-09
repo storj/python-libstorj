@@ -1,7 +1,8 @@
 version: "2"
 services:
   python_libstorj:
-    build: .
+#    build: .
+    image: storjlabs/python_libstorj
     links:
       - bridge
     volumes:
