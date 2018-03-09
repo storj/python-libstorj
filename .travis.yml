@@ -1,6 +1,7 @@
 install:
   - "echo \"$(docker images|grep storj)\""
-  - docker images
+  - docker pull storjlabs/storj-integration
+  - "echo $(docker images|grep storj)"
   - #docker-compose build
 script:
   - cp tests/options.docker_compose_example.yml tests/options.yml
