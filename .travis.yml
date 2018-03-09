@@ -1,4 +1,7 @@
 install:
-  - docker build -t python_libstorj .
+  - docker-compose build
 script:
-  - docker run -it python_libstorj python -m unittest discover
+  - echo "Testing 123"
+  - cp /root/python_libstorj/tests/options.docker_compose_example.yml /root/python_libstorj/options.yml
+  - "echo 'TODO: run user creation script'"
+  - docker-compose run python_libstorj python -m unittest discover
